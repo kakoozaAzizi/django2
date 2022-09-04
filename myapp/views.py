@@ -8,13 +8,16 @@ from django.http import HttpResponse
 def index(request):
     
     #context={
-    name='Azizi'
+    # name='Azizi'
 
-    nationality = 'Ugandan'
+    # nationality = 'Ugandan'
 
-    age= 24
+    # age= 24
 
     #}
 
-    return render(request,'index.html', {'name':name,'nationality':nationality,'age':age})
+
+    context={name='Azizi',nationality='Ugandan',age=24.2}
+
+    return render(request,'index.html', context)
 
